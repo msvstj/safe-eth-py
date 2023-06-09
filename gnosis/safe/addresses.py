@@ -464,6 +464,10 @@ MASTER_COPIES: Dict[EthereumNetwork, List[Tuple[str, int, str]]] = {
             "1.3.0",
         ),  # Safe singleton address
     ],
+    EthereumNetwork.CASCADIA_TESTNET: [
+        ("0xf70de91Fd7a6c6003B62b5c6979F2e36Dff60CC4", 364237, "1.3.0+L2"),
+        ("0x16E8524bC5dF131F878136a69C5cD97EF7fC12d0", 364227, "1.3.0"),
+    ],
 }
 
 PROXY_FACTORIES: Dict[EthereumNetwork, List[Tuple[str, int]]] = {
@@ -768,5 +772,8 @@ PROXY_FACTORIES: Dict[EthereumNetwork, List[Tuple[str, int]]] = {
             "0xa6B71E26C5e0845f74c812102Ca7114b6a896AB2",
             2086864,
         ),  # v1.3.0  Default singleton address
+    ],
+    EthereumNetwork.CASCADIA_TESTNET: [
+        ("0x9d9Baee70891966EbA5D1679069112547e937ABf", 364211),  # v1.3.0
     ],
 }
